@@ -1,0 +1,6 @@
+{
+  "name": "Jabón ZOTE | Control de Puesta en Servicio - Pablo & Co",
+  "description": "Panel de control y optimización de plazos para la puesta en servicio de la línea automatizada de Jabón ZOTE (Pablo & Co).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

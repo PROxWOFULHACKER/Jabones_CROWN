@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768" width="1024" height="768" shape-rendering="crispEdges">
+  <defs>
+    <style>
+      .navy { fill: #0b2046; }
+      .cream { fill: #fdfbf1; }
+      .grid-line { stroke: #dbe4e6; stroke-width: 2; fill: none; }
+      .soap-top { fill: #fab0c2; }
+      .soap-indent { fill: #f78da8; }
+      .soap-front { fill: #f78da8; }
+      .soap-front-shade { fill: #de557b; }
+      .soap-right { fill: #cf3f69; }
+      .soap-right-shade { fill: #b02a50; }
+      .foam-white { fill: #ffffff; }
+      .foam-blue { fill: #cce5f4; }
+      .pink-fill { fill: #f78da8; }
+      .magenta-fill { fill: #b51a4c; }
+    </style>
+  </defs>
+
+  <!-- 1. Deep Navy Outer Frame -->
+  <rect width="1024" height="768" class="navy" />
+
+  <!-- 2. Warm Cream Card with 4 Stepped Pixel Notched Corners -->
+  <polygon points="
+    36,16 988,16 988,24 996,24 996,36 1008,36 1008,732 996,732 996,744 988,744 988,752 
+    36,752 36,744 28,744 28,732 16,732 16,36 28,36 28,24 36,24
+  " class="cream" />
+
+  <!-- Pixel Corner Accents (4 corners) -->
+  <!-- Top-Left -->
+  <rect x="36" y="16" width="8" height="8" fill="#fab0c2" />
+  <rect x="28" y="24" width="8" height="12" fill="#fab0c2" />
+  <rect x="16" y="36" width="12" height="8" fill="#fab0c2" />
+  <rect x="28" y="36" width="8" height="8" fill="#de557b" />
+
+  <!-- Top-Right -->
+  <rect x="980" y="16" width="8" height="8" fill="#fab0c2" />
+  <rect x="988" y="24" width="8" height="12" fill="#fab0c2" />
+  <rect x="996" y="36" width="12" height="8" fill="#fab0c2" />
+  <rect x="988" y="36" width="8" height="8" fill="#de557b" />
+
+  <!-- Bottom-Left -->
+  <rect x="16" y="724" width="12" height="8" fill="#fab0c2" />
+  <rect x="28" y="732" width="8" height="12" fill="#fab0c2" />
+  <rect x="36" y="744" width="8" height="8" fill="#fab0c2" />
+  <rect x="28" y="724" width="8" height="8" fill="#de557b" />
+
+  <!-- Bottom-Right -->
+  <rect x="996" y="724" width="12" height="8" fill="#fab0c2" />
+  <rect x="988" y="732" width="8" height="12" fill="#fab0c2" />
+  <rect x="980" y="744" width="8" height="8" fill="#fab0c2" />
+  <rect x="988" y="724" width="8" height="8" fill="#de557b" />
+
+  <!-- 3. Centered 16x12 Blueprint Grid -->
+  <g class="grid-line">
+    <!-- Vertical grid lines (17 lines) -->
+    <line x1="152" y1="96" x2="152" y2="672" />
+    <line x1="200" y1="96" x2="200" y2="672" />
+    <line x1="248" y1="96" x2="248" y2="672" />
+    <line x1="296" y1="96" x2="296" y2="672" />
+    <line x1="344" y1="96" x2="344" y2="672" />
+    <line x1="392" y1="96" x2="392" y2="672" />
+    <line x1="440" y1="96" x2="440" y2="672" />
+    <line x1="488" y1="96" x2="488" y2="672" />
+    <line x1="536" y1="96" x2="536" y2="672" />
+    <line x1="584" y1="96" x2="584" y2="672" />
+    <line x1="632" y1="96" x2="632" y2="672" />
+    <line x1="680" y1="96" x2="680" y2="672" />
+    <line x1="728" y1="96" x2="728" y2="672" />
+    <line x1="776" y1="96" x2="776" y2="672" />
+    <line x1="824" y1="96" x2="824" y2="672" />
+    <line x1="872" y1="96" x2="872" y2="672" />
+    <line x1="920" y1="96" x2="920" y2="672" />
+
+    <!-- Horizontal grid lines (13 lines) -->
+    <line x1="152" y1="96" x2="920" y2="96" />
+    <line x1="152" y1="144" x2="920" y2="144" />
+    <line x1="152" y1="192" x2="920" y2="192" />
+    <line x1="152" y1="240" x2="920" y2="240" />
+    <line x1="152" y1="288" x2="920" y2="288" />
+    <line x1="152" y1="336" x2="920" y2="336" />
+    <line x1="152" y1="384" x2="920" y2="384" />
+    <line x1="152" y1="432" x2="920" y2="432" />
+    <line x1="152" y1="480" x2="920" y2="480" />
+    <line x1="152" y1="528" x2="920" y2="528" />
+    <line x1="152" y1="576" x2="920" y2="576" />
+    <line x1="152" y1="624" x2="920" y2="624" />
+    <line x1="152" y1="672" x2="920" y2="672" />
+  </g>
+
+  <!-- 4. ISOMETRIC PIXEL ART SOAP BAR & FOAM -->
+  <g transform="translate(316, 115)">
+    <!-- Soap Outer Dark Navy Outline (Thick Pixel Silhouette) -->
+    <polygon points="
+      -6,140 148,46 414,46 414,166 266,260 -6,260
+    " class="navy" />
+
+    <!-- Top Face (Light Pastel Pink) -->
+    <polygon points="
+      6,140 152,56 402,56 256,140
+    " class="soap-top" />
+
+    <!-- Top Face Inset Depression -->
+    <polygon points="
+      52,132 152,72 342,72 242,132
+    " class="soap-indent" />
+    <polygon points="
+      60,128 152,76 334,76
+    " fill="none" stroke="#fcaec0" stroke-width="4" />
+
+    <!-- Front-Left Face (Medium Pink) -->
+    <polygon points="
+      6,140 256,140 256,248 6,248
+    " class="soap-front" />
+    <!-- Front Face Left Highlight -->
+    <rect x="16" y="148" width="10" height="90" fill="#fcaec0" />
+    <!-- Front Face Bottom Shade -->
+    <rect x="16" y="226" width="232" height="14" class="soap-front-shade" />
+
+    <!-- Back-Right Face (Shaded Magenta / Rose) -->
+    <polygon points="
+      256,140 402,56 402,160 256,248
+    " class="soap-right" />
+    <!-- Back-Right Deep Shadow Wedge -->
+    <polygon points="
+      322,106 402,56 402,160 322,210
+    " class="soap-right-shade" />
+
+    <!-- WHITE & BABY BLUE FOAM CLOUD -->
+    <!-- Navy outline for foam -->
+    <path d="
+      M 160,54 H 404 V 126 L 370,160 L 320,120 L 260,190 L 220,146 L 174,172 L 150,106 Z
+    " class="navy" stroke="#0b2046" stroke-width="12" stroke-linejoin="round" />
+
+    <!-- White Foam Body -->
+    <path d="
+      M 166,60 H 398 V 120 L 366,152 L 316,114 L 260,180 L 222,140 L 180,164 L 156,102 Z
+    " class="foam-white" />
+
+    <!-- Foam Baby-Blue Shading Blocks -->
+    <rect x="290" y="98" width="24" height="18" class="foam-blue" />
+    <rect x="240" y="140" width="24" height="20" class="foam-blue" />
+    <rect x="336" y="128" width="28" height="18" class="foam-blue" />
+    <rect x="204" y="116" width="20" height="18" class="foam-blue" />
+
+    <!-- Top Floating Foam Lobes (Cloud shapes on top right) -->
+    <rect x="260" y="-6" width="38" height="38" rx="6" class="foam-white" stroke="#0b2046" stroke-width="8" />
+    <rect x="270" y="2" width="12" height="12" class="foam-blue" />
+
+    <rect x="302" y="20" width="36" height="36" rx="6" class="foam-white" stroke="#0b2046" stroke-width="8" />
+    <rect x="312" y="28" width="12" height="12" class="foam-blue" />
+
+    <rect x="336" y="0" width="42" height="42" rx="6" class="foam-white" stroke="#0b2046" stroke-width="8" />
+    <rect x="348" y="10" width="14" height="14" class="foam-blue" />
+
+    <!-- 3 DETACHED FLOATING BUBBLES -->
+    <!-- Bubble 1: Top High -->
+    <rect x="338" y="-54" width="30" height="30" rx="6" class="foam-white" stroke="#0b2046" stroke-width="7" />
+    <rect x="346" y="-46" width="8" height="8" class="foam-blue" />
+
+    <!-- Bubble 2: Right -->
+    <rect x="378" y="-26" width="34" height="34" rx="6" class="foam-white" stroke="#0b2046" stroke-width="7" />
+    <rect x="388" y="-18" width="10" height="10" class="foam-blue" />
+
+    <!-- Bubble 3: Left -->
+    <rect x="240" y="-34" width="26" height="26" rx="5" class="foam-white" stroke="#0b2046" stroke-width="6" />
+    <rect x="246" y="-28" width="8" height="8" class="foam-blue" />
+
+    <!-- Droplets dripping on front -->
+    <rect x="346" y="162" width="10" height="10" class="foam-white" stroke="#0b2046" stroke-width="4" />
+    <rect x="278" y="188" width="12" height="12" class="foam-white" stroke="#0b2046" stroke-width="4" />
+  </g>
+
+  <!-- 5. AUTHENTIC RETRO PIXEL LOGOTYPE -->
+  <!-- "JABÓN": Navy Silhouette with Coral Pink Fill -->
+  <g transform="translate(204, 492)">
+    <!-- Solid Navy Badge Frame around JABÓN -->
+    <rect x="-6" y="-8" width="310" height="112" class="navy" rx="4" />
+    <!-- Navy Accent Peak over Ó -->
+    <polygon points="208,-22 232,-22 220,-4 196,-4" class="navy" stroke="#0b2046" stroke-width="6" />
+
+    <!-- J (x=6..54) -->
+    <path d="M 6,6 H 24 V 76 H 48 V 6 H 66 V 88 H 6 Z" class="pink-fill" />
+
+    <!-- A (x=76..128) -->
+    <path d="
+      M 76,6 H 132 V 88 H 112 V 58 H 96 V 88 H 76 Z
+      M 96,22 H 112 V 42 H 96 Z
+    " class="pink-fill" fill-rule="evenodd" />
+
+    <!-- B (x=140..192) -->
+    <path d="
+      M 140,6 H 192 V 38 H 176 V 52 H 192 V 88 H 140 Z
+      M 158,18 H 176 V 32 H 158 Z
+      M 158,58 H 176 V 76 H 158 Z
+    " class="pink-fill" fill-rule="evenodd" />
+
+    <!-- Ó (x=204..256) -->
+    <polygon points="208,-18 228,-18 218,-4 198,-4" class="pink-fill" />
+    <path d="
+      M 204,6 H 256 V 88 H 204 Z
+      M 222,22 H 238 V 72 H 222 Z
+    " class="pink-fill" fill-rule="evenodd" />
+
+    <!-- N (x=268..320) -->
+    <path d="
+      M 268,6 H 286 V 34 L 302,68 V 6 H 320 V 88 H 302 L 286,52 V 88 H 268 Z
+    " class="pink-fill" />
+  </g>
+
+  <!-- "ZÓTE": Crimson/Magenta Silhouette with Pure White Fill -->
+  <g transform="translate(522, 474)">
+    <!-- Solid Crimson/Magenta Badge Frame around ZÓTE -->
+    <rect x="-6" y="-8" width="302" height="128" class="magenta-fill" rx="4" />
+    <!-- Magenta Accent Peak over Ó -->
+    <polygon points="120,-24 144,-24 132,-4 108,-4" class="magenta-fill" stroke="#b51a4c" stroke-width="6" />
+
+    <!-- Z (x=6..66) -->
+    <path d="
+      M 6,10 H 66 V 32 L 26,78 H 66 V 98 H 6 V 76 L 46,30 H 6 Z
+    " class="foam-white" />
+
+    <!-- Ó (x=78..142) with white accent -->
+    <polygon points="118,-20 138,-20 128,-6 108,-6" class="foam-white" />
+    <path d="
+      M 78,10 H 142 V 98 H 78 Z
+      M 98,28 H 122 V 80 H 98 Z
+    " class="foam-white" fill-rule="evenodd" />
+
+    <!-- T (x=154..220) -->
+    <path d="
+      M 154,10 H 220 V 32 H 198 V 98 H 176 V 32 H 154 Z
+    " class="foam-white" />
+
+    <!-- E (x=232..290) -->
+    <path d="
+      M 232,10 H 290 V 30 H 252 V 44 H 284 V 64 H 252 V 78 H 290 V 98 H 232 Z
+    " class="foam-white" />
+  </g>
+
+  <!-- 6. SUBTITLE: "LIMPIEZA TRADICIONAL" in Authentic Dark Navy Pixel Block Characters -->
+  <g transform="translate(512, 642)">
+    <text x="0" y="0" font-family="'Courier New', monospace, sans-serif" font-weight="900" font-size="30" fill="#0b2046" letter-spacing="12" text-anchor="middle">
+      LIMPIEZA TRADICIONAL
+    </text>
+  </g>
+</svg>
